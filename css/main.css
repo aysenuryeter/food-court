@@ -1,21 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     padding: 30px 0 0 0;
     margin: 0;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #D95948;
+    border-bottom: 5px solid #D95948;
 }
-.nav{
-    width: 1400px;
+
+.nav {
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,41 +26,48 @@ body{
     margin-bottom: 15px;
 }
 
-.nav-ul{
+.nav-ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.nav-a{
+
+.nav-a {
     text-decoration: none;
     color: #146354;
     font-size: 14px;
 }
 
-.navbar-item{
+.navbar-item {
     padding: 0 30px;
 }
 
-.navbar-item:first-child{
+.navbar-item:first-child {
     padding-left: 0;
 }
 
 
-.addRecipe{
+.addRecipe {
     color: #D95948;
     font-weight: 700;
     margin-right: 30px;
 }
 
-.sign{
+.sign {
     background-color: #146354;
     color: #FAFAFA;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
+}
+.sign:hover{
+    color: #146354;
+    background-color: unset;
+    border: 1px solid #146354;
+    
 }
 
-.home{
+.home {
     position: relative;
     background-image: url("../img/homepage.webp");
     background-size: cover;
@@ -66,127 +76,139 @@ body{
     padding: 3rem 0;
 }
 
-.content{
-    width: 1400px;
+.content {
+    width: 1200px;
     margin: auto;
 }
-.top-area{
+
+.top-area {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.slide{
-    width: 950px;
-    height: 600px;
+.slide {
+    width: 70%;
+    height: 550px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
-.foodInfo{
-    width: 420px;
+.foodInfo {
+    width: 28%;
     background-color: #146354;
-    height: 600px;
-    border-radius: 20px;
+    height: 550px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
     color: #f6ff6c;
 }
-.title{
+
+.title {
     margin-bottom: 25px;
 }
-.suggestion{
+
+.suggestion {
     display: flex;
     align-items: center;
     width: 100%;
-    border-top: 1px solid hsla(0,0%,100%,.1);
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
     padding: 15px 0;
 }
-.suggestionImgArea{
+
+.suggestionImgArea {
     width: 75px;
     height: 75px;
 }
-.suggestionImg{
+
+.suggestionImg {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-.suggestionItem{
+
+.suggestionItem {
     margin-left: 20px;
     text-decoration: none;
     color: #FAFAFA;
 }
 
-.bottom-area{
+.bottom-area {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.bottomItem{
+.bottomItem {
     height: 120px;
-    width: 220px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    border-radius: 20px;
+    width: 16%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    border-radius: 15px;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imgInfo{
+.imgInfo {
     color: #FAFAFA;
     font-weight: 600;
 }
 
-.commenContent{
-    width: 1400px;
+.commenContent {
+    width: 1200px;
     margin: auto;
 }
-.infoContent{
+
+.infoContent {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.info{
+
+.info {
     width: 23%;
     height: 170px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid #146354;
 }
-.pageInfo{
+
+.pageInfo {
     width: 100%;
     background-color: #146354;
 }
-.infoBack{
+
+.infoBack {
     color: #e2e8f0;
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     height: min-content;
     padding: 25px;
-    
+
 }
-.latestRecipes{
+
+.latestRecipes {
     margin: 30px auto;
 }
-.bigTitle{
+
+.bigTitle {
     font-size: 24px;
     font-weight: 700;
     color: #146354;
     margin-bottom: 30px;
 }
 
-.recipes{
+.recipes {
     margin: 0;
     padding: 0;
 }
 
-.recipeCard{
+.recipeCard {
     width: 300px;
     height: 325px;
     border: 1px solid #e2e8f0;
@@ -195,77 +217,95 @@ body{
 
 }
 
-.topCard{
+.topCard {
     width: 100%;
     height: 60%;
 }
-.recipeImg{
+
+.recipeImg {
     width: 100%;
     height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.bottomCard{
+
+.bottomCard {
     height: 40%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.iconArea , .icon{
+
+.recipeTitle {
+    color: #146354;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.iconArea,
+.icon {
     display: flex;
     color: #56696a;
 }
-.icon{
+
+.icon {
     align-items: center;
     justify-content: center;
 }
-.icon:last-child{
+
+.icon:last-child {
     margin-left: 15px;
 }
 
-.icon > i{
+.icon>i {
     margin-right: 5px;
 }
-    footer{
-background-color: #F3F3F3;
-    }
 
-.footerArea{
+footer {
+    background-color: #F3F3F3;
+}
+
+.footerArea {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     padding: 20px 0;
 }
-.iconCircle > i{
+
+.iconCircle>i {
     color: #D95948;
     font-size: 20px;
     margin: 0 10px;
-    
+
 }
-.iconCircle > i:first-child{
+
+.iconCircle>i:first-child {
     margin-left: 0;
 }
-.rightFooter{
-    display: flex;
-    flex-direction: column;
-}
 
-label{
-    color: #D95948;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
 
-#fname{
-    border: 2px solid #146354;
-    padding: 10px;
-    border-radius: 5px;
-    outline: 0;
-}
-
-.footerInfo{
+.footerInfo {
     font-size: 12px;
     color: #146354;
+}
+
+a:hover {
+    color: #D95948;
+
+}
+
+.breadcrumb-item>a {
+    color: #56696a;
+    text-decoration: none;
+}
+
+.active {
+    color: #D95948 !important;
+}
+
+.allRecipes {
+    margin-top: 100px;
 }
