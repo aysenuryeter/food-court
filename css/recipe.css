@@ -1,0 +1,161 @@
+.recipe{
+    margin:50px auto;
+}
+
+.recipeTitleArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleRecipe{
+    font-size: 35px;
+    color: #146354;
+    margin: 0;
+}
+
+.favorite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fav{
+    text-decoration: none;
+    color: #5669;
+}
+
+.fa-star{
+    margin-right: 10px;
+}
+
+.recipeContent , .recipeInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.recipeContent{
+    margin-top: 25px;
+}
+
+.leftRecipe{
+    width: 70%;
+}
+
+.recipeImg > img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.recipeInfo{
+    margin-top: 25px;
+}
+.rInfo{
+width: 32%;
+border: 1px solid #146354;
+border-radius: 15px;
+display: flex;
+align-items: center;
+padding: 25px;
+}
+.rInfo > i{
+    font-size: 40px;
+    color: #146354;
+}
+.infoText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.desc{
+    font-size: 14px;
+    color: #064545;
+
+}
+.value{
+    font-size: 21px;
+    color: #D95948;
+    font-weight: 600;
+}
+
+.rightRecipe{
+    width: 28%;
+}
+
+
+.writer{
+    display: flex;
+    align-items: center;
+    border: 2px solid #f4f3f0;
+    padding: 25px 50px;
+    border-radius: 15px;    
+}
+
+.writerImg{
+    width: 75px;
+    height: 75px;
+}
+.writerImg > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.writer > span{
+color: #146354;
+font-size: 21px;
+margin-left: 15px;
+font-weight: 500;
+}
+.material{
+    background-color: #146354;
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.materialTitle{
+    margin: 0;
+    color: #f6ff6c;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.materialContent  {
+    color: white;
+}
+.materialContent > p {
+font-size: 16px;
+font-weight: 500;
+padding: 15px 0;
+
+border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+.materialContent > p > span{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.watchUser{
+    background-color: #EEF4F8;
+    padding: 25px;
+    margin-top: 15px ;
+}
+
+.watchUser > span {
+color: #D95948;
+font-weight: 600;
+text-align: center;
+display: block;
+}
+
+.recipeList{
+    margin-top: 50px;
+}
+.recipeList > h4 {
+    color: #D95948;
+    font-weight: 600;
+}
+.recipeItem{
+    color: #146354;
+    margin-top: 25px;
+}
+.recipeItem > h5 {
+font-weight: 500;
+}
