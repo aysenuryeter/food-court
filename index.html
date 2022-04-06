@@ -36,8 +36,9 @@
                 </div>
                 <div class="right-nav">
                     <a class="nav-a addRecipe" href="addRecipes.html">Add Recipe</a>
-                    <a class="nav-a sign" href="login.html">Sign in / Sign up</a>
-                </div>
+                    <button type="button" class="nav-a sign" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Sign In / Sign Up
+                    </button> </div>
             </div>
 
         </nav>
@@ -204,7 +205,47 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="signModal">
+                    <div class="leftModal">
+                        <div class="signIn">
+                            <h4>Sign In</h4>
+                            <form>
+                                <div class="col-md-6 modalInput">
+                                    <label for="inputName" class="form-label">User Name </label>
+                                    <input type="text" class="form-control" id="inputName">
+                                </div>
+                                <div class="col-md-6 modalInput">
+                                    <label for="inputName" class="form-label"> Password </label>
+                                    <input type="password" class="form-control" id="inputName">
+                                </div>
 
+                                <button type="submit" class="btn btn-primary modalButton">Sign in</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="rightModal">
+                        <div class="signUp">
+                            <h4>Food Court</h4>
+                            <span>Sign up now to reach the recipes specially selected for you.</span>
+                            <form>
+                                <button type="submit" class="btn btn-primary modalUpButton">Sign Up</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="commenContent footerArea">
             <div class="leftFooter">

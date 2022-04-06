@@ -1,36 +1,38 @@
-.addRecipeForm{
+.addRecipeForm {
     display: flex;
     justify-content: space-between;
     margin: 50px auto !important;
 }
 
-.leftForm{
+.leftForm {
     width: 70%;
     margin: auto;
 }
 
-.formTitle{
+.formTitle {
     color: #146354;
-margin-top:40px;
-font-weight: 600;
-}
-.leftForm >h1{
-    color: #146354;
- 
+    margin-top: 40px;
+    font-weight: 600;
 }
 
-.addArea{
+.leftForm>h1 {
+    color: #146354;
+
+}
+
+.addArea {
     color: #146354;
     text-decoration: none;
     font-weight: 600;
 }
 
-.form-control:focus ,.form-select:focus {
-    border-color: #146354 !important; 
+.form-control:focus,
+.form-select:focus {
+    border-color: #146354 !important;
     box-shadow: 0 0 0 0.25rem rgb(20 99 84 / 25%) !important;
 }
 
-.btn-primary {
+.addRecipeButton {
     color: #fff;
     background-color: #D95948 !important;
     border-color: #D95948 !important;
@@ -39,6 +41,6 @@ font-weight: 600;
     margin: auto;
 }
 
-.btn-primary:focus{
+.btn-primary:focus {
     box-shadow: 0 0 0 0.25rem rgb(217 89 72 / 50%);
 }
