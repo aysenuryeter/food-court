@@ -27,6 +27,11 @@
        width: 75%;
    }
 
+   .d-flex >.ui-widget{
+    width: 100%;
+    display: flex;
+   }
+
    .form-control:focus {
        border-color: #D95948;
        box-shadow: 0 0 0 0.25rem rgb(217 89 72 / 25%);

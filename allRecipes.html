@@ -13,6 +13,31 @@
         <!-- We imported multiple css files because they have common div names -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/allRecipes.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>    
+    $( function() {
+        var availableTags = [
+          "Apple",
+          "Ayran",
+          "Doner",
+          "Pizza",
+          "Cola",
+          "Cold Tea",
+          "Pasta",
+          "Coffee",
+          "Kebap",
+          "Tomate Soup",
+          "Hamburger",
+          "Salad",
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags
+        });
+      } );
+      </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
     </style>
@@ -53,10 +78,14 @@
             <h1 class="filterTitle">Food Court</h1>
         </div>
         <div class="filter commenContent">
-            <form class="d-flex">
+
+            <form class="d-flex ">
                  <!-- Filter-->
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                 <div class="ui-widget">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </div>
+                
             </form>
         </div>
 
