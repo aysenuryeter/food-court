@@ -2,6 +2,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+#panel {
+    display: none;
+}
 
 .listTitle{
     margin-bottom: 25px;

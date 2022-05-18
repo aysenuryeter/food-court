@@ -1,6 +1,9 @@
 .recipe{
     margin:50px auto;
 }
+#panel {
+    display: none;
+}
 
 .recipeTitleArea{
     display: flex;

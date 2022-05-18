@@ -13,6 +13,10 @@
         <!-- We imported multiple css files because they have common div names -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/recipe.css">
+    <script src="jQuery.js"></script>
+	<script src="jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/menu.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
     </style>
@@ -29,11 +33,13 @@
                             <a class="nav-a" href="index.html">Home Page</a>
                         </li>
                         <li class="navbar-item">
-                            <a class="nav-a" href="list.html">Foods</a>
-                        </li>
-                        <li class="navbar-item">
+                          <div id="flip">  <a class="nav-a" >Recipes</a> </div>
+                          <div id="panel" >
+                            <a class="nav-a" href="list.html">Foods</a> </br>
                             <a class="nav-a" href="list.html">Deserts</a>
+                        </div>
                         </li>
+                     
                         <li class="navbar-item">
                             <a class="nav-a" href="list.html">Trending</a>
                         </li>
