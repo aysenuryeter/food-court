@@ -3,7 +3,9 @@
     justify-content: space-between;
     margin: 50px auto !important;
 }
-
+#panel {
+    display: none;
+}
 .leftForm {
     width: 70%;
     margin: auto;
