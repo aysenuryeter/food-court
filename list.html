@@ -16,34 +16,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
     </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
 </head>
 
 <body>
+    <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+          $("#footer").load("footer.html");
+        });
+        </script>
     <header>
          <!-- Menu -->
-        <nav class="navbar">
-            <div class="nav">
-                <div class="left-nav">
-                    <ul class="nav-ul">
-                        <li class="navbar-item">
-                            <a class="nav-a" href="index.html">Home Page</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-a" href="list.html">Foods</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-a" href="list.html">Deserts</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-a" href="list.html">Trending</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-nav">
-                    <a class="nav-a addRecipe" href="addRecipes.html">Add Recipe</a>
-                    <button type="button" class="nav-a sign" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Sign In / Sign Up
-                    </button> </div>
+         <nav class="navbar">
+            <div class="nav" id="nav-placeholder">
+
             </div>
 
         </nav>
@@ -51,7 +40,7 @@
 
     <section class="list commenContent">
         <div class="descArea">
-            <h1 class="listTitle">Foods</h1>
+            <h1 class="listTitle" id="listTitle">Foods</h1>
             <p>If you want to cook with unique taste, you are at the right address. You can easily make the food you choose from the category that suits you. bon appetit in advance.</p>
 
         </div>
@@ -198,56 +187,9 @@
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="signModal">
-                    <div class="leftModal">
-                        <div class="signIn">
-                            <h4>Sign In</h4>
-                            <form>
-                                <div class="col-md-6 modalInput">
-                                    <label for="inputName" class="form-label">User Name </label>
-                                    <input type="text" class="form-control" id="inputName">
-                                </div>
-                                <div class="col-md-6 modalInput">
-                                    <label for="inputName" class="form-label"> Password </label>
-                                    <input type="password" class="form-control" id="inputName">
-                                </div>
 
-                                <button type="submit" class="btn btn-primary modalButton">Sign in</button>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="rightModal">
-                        <div class="signUp">
-                            <h4>Food Court</h4>
-                            <span>Sign up now to reach the recipes specially selected for you.</span>
-                            <form>
-                                <button type="submit" class="btn btn-primary modalUpButton">Sign Up</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Footer -->
-    <footer>
-        <div class="commenContent footerArea">
-            <div class="leftFooter">
-                <a class="iconCircle" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="iconCircle" href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a class="iconCircle" href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="footerLogo">
-                <span class="footerInfo">
-                    Copyright. © 2022 Selcan - Ayşenur.</span>
-            </div>
-        </div>
+    <footer id="footer">
     </footer>
 
     <script src="https://kit.fontawesome.com/c1d1b5beb5.js" crossorigin="anonymous"></script>
