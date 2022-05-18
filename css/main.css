@@ -150,6 +150,7 @@ body {
 }
 
 .bottom-area {
+    
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -193,16 +194,19 @@ body {
 }
 
 .pageInfo {
+
     width: 100%;
     background-color: #146354;
 }
 
 .infoBack {
+  
     color: #e2e8f0;
     width: 1200px;
     margin: auto;
     height: min-content;
     padding: 25px;
+    
 
 }
 

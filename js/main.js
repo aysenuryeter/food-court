@@ -1,26 +1,14 @@
-
 function login() {
 
-    if ($("#username").val() == "admin" && $("#password").val() == "123") {
+    if ($("#username").val() == "dene" && $("#password").val() == "123") {
       
       $("#sign").css("display", "none");
       $("#addRecipe").css("display", "block");
       alert("You are a valid user");
-
     } else {
       alert("You are not a valid user");
     }
   }
-
-  function like(id) {
-      
-        x = $('#'+id).text()
-        num= parseInt(x)
-        sum= num+1
-        $('#'+id).text(sum)
-        console.log(x)
-      }
-
 
 
   $(".nav-ul li").hover(function() {
@@ -33,12 +21,7 @@ function login() {
   });
 
 
-//   like animation 
-  $(".heart").on('click touchstart', function(){
-    $(this).toggleClass('is_animating');
-  });
-  
-  $(".heart").on('animationend', function(){
-    $(this).toggleClass('is_animating');
-  });
-  
+  $("#nav-food").click(function(){
+
+    $('#listTitle').text('New Word');
+  })
