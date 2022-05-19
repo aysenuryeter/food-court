@@ -25,3 +25,24 @@ function login() {
 
     $('#listTitle').text('New Word');
   })
+
+
+  //like animation
+
+  
+  function like(id) {
+
+    x = $('#'+id).text()
+    num= parseInt(x)
+    sum= num+1
+    $('#'+id).text(sum)
+    console.log(x)
+  }
+
+  $(".heart").on('click touchstart', function(){
+    $(this).toggleClass('is_animating');
+  });
+
+  $(".heart").on('animationend', function(){
+    $(this).toggleClass('is_animating');
+  });
