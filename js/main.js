@@ -1,6 +1,6 @@
 function login() {
 
-    if ($("#username").val() == "dene" && $("#password").val() == "123") {
+    if ($("#username").val() == "admin" && $("#password").val() == "123") {
       
       $("#sign").css("display", "none");
       $("#addRecipe").css("display", "block");
