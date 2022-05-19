@@ -420,3 +420,14 @@ background-color: #FAFAFA;
         from {background-position:left;}
         to { background-position:right;}
       }
+
+      .logo-area{
+        height: 60px;
+        width: auto;
+        transform: rotate(-90deg);
+      }
+
+      .logo-area > img{
+          height: 100%;
+      }
+
