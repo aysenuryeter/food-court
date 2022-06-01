@@ -1,25 +1,8 @@
 
-function login() {
-
-  var username = $("#username").val()
-  var password = $("#password").val()
-  
-
-  $.getJSON("../json/users.json", function(data) {
-    $.each(data.users, function(i, user){
-      if(user.username === username && user.password === password)  {
-          localStorage.setItem("token", user.token)
-          window.location.reload()
-      }
-  })
-  })
-  
-  }
-
-
 window.onload = function() {
   var token = localStorage.getItem("token")
   
+  console.log(token)
 
   if(token !== "") {
     // logged
@@ -32,8 +15,30 @@ window.onload = function() {
     $("#sign").css("display", "block");
     $("#addRecipe").css("display", "none");
     $("#logout").css("display", "none");
+
   }
 }
+
+
+function login() {
+
+  var username = $("#username").val()
+  var password = $("#password").val()
+  
+
+  $.getJSON("../json/users.json", function(data) {
+    $.each(data.users, function(i, user){
+      if(user.username === username && user.password === password)  {
+          localStorage.setItem("token", user.token)
+          window.location.reload()
+      }
+      else{
+        alert("user not valid!")
+      }
+  })
+  })
+  
+  }
 
 function logout() {
   localStorage.setItem("token", "")
