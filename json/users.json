@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "username": "root",
+            "password": "123456",
+            "name":"Root Root",
+            "token": "8kYvpnS6bA"
+        },
+        {
+            "username": "aysenur",
+            "password": "12345",
+            "name": "Ayşenur Yeter",
+            "token": "q9khHZCzbe"
+        }
+   
+    ]
+}

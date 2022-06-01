@@ -18,8 +18,8 @@
             </li>
             <li><a class="nav-a" href="javascript:void(0);">Recepies <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu">
-                  <li> <a class="nav-a" href="list.html" id="nav-food">Foods</a></li>
-                  <li><a class="nav-a" href="list.html" id="nav-desert">Deserts</a></li>
+                  <li> <a class="nav-a"  id="nav-food">Foods</a></li>
+                  <li><a class="nav-a"  id="nav-desert">Deserts</a></li>
                 </ul>
               </li>
             <li class="navbar-item">
@@ -28,7 +28,11 @@
         </ul>
     </div>
     <div class="right-nav">
+
         <a id="addRecipe" class="nav-a addRecipe" href="addRecipes.html">Add Recipe</a>
+        <button class="logout nav-a sign" id="logout" onclick="logout()">
+            Logout
+        </button>
         <button id="sign" type="button" class="nav-a sign" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Sign In / Sign Up
         </button> </div> 

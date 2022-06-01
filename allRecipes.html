@@ -42,7 +42,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
     </style>
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/recipeDetail.js"></script>
 </head>
 
 <body>
@@ -136,30 +136,8 @@
             <div class="rightRecipes">
                 <h2 class="fTitle">Food</h2>
                 <div class="container recipes">
-                    <div class="row row-cols-auto">
-                        <div class="col">
-                            <div class="recipeCard">
-                                <div class="topCard">
-                                    <img class="recipeImg"
-                                        src="https://static.bizimtarifler.com/wp-content/uploads/2022/02/dreamstime_m_135316885-300x200.jpg.webp"
-                                        alt="recipe">
-                                </div>
-                                <div class="bottomCard">
-                                    <a class="recipeTitle" href="recipe.html">Recipe Name</a>
-                                    <div class="iconArea">
-                                        <div class="icon">
-                                            <i class="fa-solid fa-message"></i>
-                                            <span>5</span>
-                                        </div>
-                                        <div class="icon">
-                                            <div class=" icon heart">
-                                                <span id="span3" onclick="like(id)" >154</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cols-auto" id="recipeCard">
+                        
                     </div>
                 </div>
             </div>

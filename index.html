@@ -19,6 +19,9 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+
+
 </head>
 
 <body>
@@ -85,7 +88,7 @@
                                     alt="suggesiton">
                             </div>
                             <a class="suggestionItem" href="recipe.html">
-                                Food 1
+                                Minestrone Soup
                             </a>
                         </div>
                         <div class="suggestion">
@@ -95,7 +98,7 @@
                                     alt="suggesiton">
                             </div>
                             <a class="suggestionItem" href="recipe.html">
-                                Food 2
+                                Cauliflower
                             </a>
                         </div>
                         <div class="suggestion">
@@ -105,7 +108,7 @@
                                     alt="suggesiton">
                             </div>
                             <a class="suggestionItem" href="recipe.html">
-                                Food 3
+                               Jam Tarts
                             </a>
                         </div>
                         <div class="suggestion">
@@ -115,7 +118,7 @@
                                     alt="suggesiton">
                             </div>
                             <a class="suggestionItem" href="recipe.html">
-                                Food 4
+                                Summer Pudding
                             </a>
                         </div>
 
@@ -164,70 +167,8 @@
         <!-- Lates Recipes-->
         <h1 class="bigTitle">Latest Recipes</h1>
         <div class="container recipes">
-            <div class="row row-cols-auto">
-                <div class="col">
-                    <div class="recipeCard">
-                        <div class="topCard">
-                            <img class="recipeImg"
-                                src="https://static.bizimtarifler.com/wp-content/uploads/2022/02/dreamstime_m_135316885-300x200.jpg.webp"
-                                alt="recipe">
-                        </div>
-                        <div class="bottomCard">
-                            <a class="recipeTitle" href="recipe.html">Recipe Name</a>
-                            <div class="iconArea">
-                                <div class="icon">
-                                    <i class="fa-solid fa-message"></i>
-                                    <span>5</span>
-                                </div>
-                                <div class=" icon heart">
-                                    <span id="span11" onclick="like(id)" >154</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="recipeCard">
-                        <div class="topCard">
-                            <img class="recipeImg"
-                                src="https://static.bizimtarifler.com/wp-content/uploads/2022/02/dreamstime_m_135316885-300x200.jpg.webp"
-                                alt="recipe">
-                        </div>
-                        <div class="bottomCard">
-                            <a class="recipeTitle" href="recipe.html">Recipe Name</a>
-                            <div class="iconArea">
-                                <div class="icon">
-                                    <i class="fa-solid fa-message"></i>
-                                    <span>5</span>
-                                </div>
-                                <div class=" icon heart">
-                                    <span id="span12" onclick="like(id)" >154</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="recipeCard">
-                        <div class="topCard">
-                            <img class="recipeImg"
-                                src="https://static.bizimtarifler.com/wp-content/uploads/2022/02/dreamstime_m_135316885-300x200.jpg.webp"
-                                alt="recipe">
-                        </div>
-                        <div class="bottomCard">
-                            <a class="recipeTitle" href="recipe.html">Recipe Name</a>
-                            <div class="iconArea">
-                                <div class="icon">
-                                    <i class="fa-solid fa-message"></i>
-                                    <span>5</span>
-                                </div>
-                                <div class=" icon heart">
-                                    <span id="span13" onclick="like(id)" >154</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row row-cols-auto" id="recipeCardThree">
+          
             </div>
         </div>
 

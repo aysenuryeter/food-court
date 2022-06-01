@@ -1,13 +1,40 @@
+window.onload = function() {
+  var token = localStorage.getItem("token")
+
+  if(token !== "") {
+    // logged
+    $("#sign").css("display", "none");
+    $("#addRecipe").css("display", "block");
+    $("#logout").css("display", "block");
+  } else {
+    // not logged
+    $("#sign").css("display", "block");
+    $("#addRecipe").css("display", "none");
+    $("#logout").css("display", "none");
+  }
+}
+
+function logout() {
+  localStorage.setItem("token", "")
+  window.location.reload();
+}
+
+
 function login() {
 
-    if ($("#username").val() == "admin" && $("#password").val() == "123") {
-      
-      $("#sign").css("display", "none");
-      $("#addRecipe").css("display", "block");
-      alert("You are a valid user");
-    } else {
-      alert("You are not a valid user");
-    }
+  var username = $("#username").val()
+  var password = $("#password").val()
+  
+
+  $.getJSON("../json/users.json", function(data) {
+    $.each(data.users, function(i, user){
+      if(user.username === username && user.password === password)  {
+          localStorage.setItem("token", user.token)
+          window.location.reload()
+      }
+  })
+  })
+  
   }
 
 
@@ -20,11 +47,32 @@ function login() {
     }
   });
 
+  var food=""
 
   $("#nav-food").click(function(){
 
-    $('#listTitle').text('New Word');
+   food = ($("#nav-food").text());
+
+    localStorage.setItem("food", food)
+ window.location.replace("list.html")
+
+    $("#listTitle").text(food)
+    
   })
+
+  $("#nav-desert").click(function(){
+
+   food = ($("#nav-desert").text());
+   
+
+    localStorage.setItem("food", food)
+ window.location.replace("list.html")
+
+    $("#listTitle").text(food)
+    
+  })
+
+
 
 
   //like animation

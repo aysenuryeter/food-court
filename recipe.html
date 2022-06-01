@@ -17,6 +17,7 @@
 	<script src="js/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/recipe.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap');
     </style>
@@ -45,13 +46,13 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">HomePage</a></li>
                 <li class="breadcrumb-item " aria-current="page"><a href="allRecipes.html">Food</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Food Name</li>
+                <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-item"></li>
             </ol>
         </nav>
 
         <div class="recipeContainer commenContent">
             <div class="recipeTitleArea">
-                <h1 class="titleRecipe">Food Name</h1>
+                <h1 class="titleRecipe" id="titleRecipe"></h1>
                 <div class="favorite">
                     <a class="fav" href="#"><i class="fa-solid fa-star"></i> Add to favorites</a>
                 </div>
@@ -60,78 +61,52 @@
             <div class="recipeContent">
                 <div class="leftRecipe">
                     <div class="rImgArea">
-                        <div class="recipeImg">
-                            <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="recipe">
+                        <div class="recipeImg" id="recipeImg">
+                            
                         </div>
                         <div class="recipeInfo">
                             <div class="rInfo">
                                 <i class="fa-solid fa-clock"></i>
                                 <div class="infoText">
                                     <span class="desc">Time:</span>
-                                    <span class="value">40 min</span>
+                                    <span class="value" id="recipeTime"></span>
                                 </div>
                             </div>
                             <div class="rInfo">
                                 <i class="fa-solid fa-bell-concierge"></i>
                                 <div class="infoText">
                                     <span class="desc">Difficulty:</span>
-                                    <span class="value">Easy</span>
+                                    <span class="value" id="recipeDifficulty"></span>
                                 </div>
                             </div>
                             <div class="rInfo">
                                 <i class="fa-solid fa-bowl-food"></i>
                                 <div class="infoText">
                                     <span class="desc">Portion:</span>
-                                    <span class="value">for 8 - 10 Person</span>
+                                    <span class="value" id="recipePortion"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="watchUser">
                             <span>This recipe has been added to favorites 188 times today.</span>
                         </div>
-                        <div class="recipeList">
-                            <h4>Recipe Name</h4>
-                            <div class="recipeItem">
-                                <h5>Step 1</h5>
-                                <span>Vegetables are washed, peeled and chopped.</span>
-                            </div>
-                            <div class="recipeItem">
-                                <h5>Step 2</h5>
-                                <span>Add olive oil to the pan and heat it.</span>
-                            </div>
-                            <div class="recipeItem">
-                                <h5>Step 3</h5>
-                                <span> Add salt, powdered garlic, cinnamon stick, ginger and mix.</span>
-                            </div>
-                            <div class="recipeItem">
-                                <h5>Step 4</h5>
-                                <span>
-                                    with finely chopped dill or fresh mint and toasted bread pieces
-                                                                        service is done.
-                                                                        Bon Appetit :) </span>
-                            </div>
+                        <div class="recipeList" id="recipeList">
+                            <h4 id="recipeListName"></h4>
+                
                         </div>
                     </div>
                 </div>
                 <div class="rightRecipe">
                     <div class="writer">
-                        <div class="writerImg"><img
-                                src="https://images.pexels.com/photos/3771120/pexels-photo-3771120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                alt="profile"></div>
-                        <span>Name Surname</span>
+                        <div class="writerImg" id="writerImg"> 
+                            
+                        </div>
+                        <span id="writer"></span>
                     </div>
                     <div class="material">
                         <h4 class="materialTitle">Materials</h4>
-                        <div class="materialContent">
-                            <p>Salt<span> (1 Pinch)</span></p>
-                            <p>Cream<span> (3 Tablespoons)</span></p>
-                            <p>Water<span> (7 Cups of Water)</span></p>
-                            <p>Patato<span> (1 Number)</span></p>
-                            <p>Garlic powder<span> (1 Number)</span></p>
-                            <p>Carrot<span> (1 Number)</span></p>
-                            <p>Dill<span> (1 Number)</span></p>
-                            <p>Olive oil<span> (2 Tablespoons)</span></p>
+                        <div class="materialContent" id="materialContent">
+  
                         </div>
                     </div>
                 </div>
