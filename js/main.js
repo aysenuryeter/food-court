@@ -1,24 +1,3 @@
-window.onload = function() {
-  var token = localStorage.getItem("token")
-
-  if(token !== "") {
-    // logged
-    $("#sign").css("display", "none");
-    $("#addRecipe").css("display", "block");
-    $("#logout").css("display", "block");
-  } else {
-    // not logged
-    $("#sign").css("display", "block");
-    $("#addRecipe").css("display", "none");
-    $("#logout").css("display", "none");
-  }
-}
-
-function logout() {
-  localStorage.setItem("token", "")
-  window.location.reload();
-}
-
 
 function login() {
 
@@ -36,6 +15,31 @@ function login() {
   })
   
   }
+
+
+window.onload = function() {
+  var token = localStorage.getItem("token")
+  
+
+  if(token !== "") {
+    // logged
+    $("#sign").css("display", "none");
+    $("#addRecipe").css("display", "block");
+    $("#logout").css("display", "block");
+    
+  } else {
+    // not logged
+    $("#sign").css("display", "block");
+    $("#addRecipe").css("display", "none");
+    $("#logout").css("display", "none");
+  }
+}
+
+function logout() {
+  localStorage.setItem("token", "")
+  window.location.reload();
+}
+
 
 
   $(".nav-ul li").hover(function() {
