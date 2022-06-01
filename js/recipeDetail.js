@@ -11,13 +11,10 @@ else{
 
 $.getJSON(url, function(data){
  var html = "";
- console.log(data)
  $("#listTitle").text(food)
  $("#recipeCard").html("");
  $.each(data.foods, function(i, item){
-    console.log(data.food)
-    console.log(item)
-     
+  
         $("#recipeCard").append(
             '<div id="'+i+ '" class="col" ><div class="recipeCard" ><div class="topCard"><img class="recipeImg"src="'+
             item.image+'"alt="recipe"></div><div class="bottomCard"><a class="recipeTitle" href="recipe.html">' +

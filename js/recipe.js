@@ -1,16 +1,13 @@
 let title = localStorage.getItem("title")
 let number = localStorage.getItem("number")
 food = localStorage.getItem("food")
-console.log(food)
+
 
 var url =
 "https://onurgozcu.com/food-court/api/food/getFoodDetails?foodId="+number;
 $.getJSON(url, function(data){
-    console.log(data)
     $.each(data.food, function(i, item){
-        console.log(title)
         if(item.name === title) {
-            console.log(item)
             $("#breadcrumb-item").text(item.name)
             $("#recipeTime").text(item.preparationTime)
              $("#recipeDifficulty").text(item.difficulty)

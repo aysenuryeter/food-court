@@ -84,7 +84,6 @@ function login() {
     num= parseInt(x)
     sum= num+1
     $('#'+id).text(sum)
-    console.log(x)
   }
 
   $(".heart").on('click touchstart', function(){

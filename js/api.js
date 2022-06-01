@@ -11,12 +11,9 @@ else{
 
 $.getJSON(url, function(data){
  var html = "";
- console.log(data)
  $("#listTitle").text(food)
  $("#recipeCardThree").html("");
  $.each(data.foods, function(i, item){
-    console.log(data.food)
-    console.log(item)
      if(i <= 2){
         $("#recipeCardThree").append(
             '<div id="'+i+ '" class="col" ><div class="recipeCard" ><div class="topCard"><img class="recipeImg"src="'+
