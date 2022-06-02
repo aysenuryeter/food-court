@@ -25,7 +25,7 @@ $("#login-button").click(function() {
   var password = $("#password").val()
   
 
-  $.getJSON("/json/users.json", function(data) {
+  $.getJSON("json/users.json", function(data) {
     $.each(data.users, function(i, user){
       if(user.username === username && user.password === password)  {
           localStorage.setItem("token", user.token)
