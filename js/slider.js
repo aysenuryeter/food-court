@@ -1,5 +1,5 @@
 $(document).ready(function(){  
-    $(".slider").sss();
+    $(".slider").css();
     });
     $("p").hover(function(){
         $(this).css("background-color", "yellow");

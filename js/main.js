@@ -1,4 +1,5 @@
-
+$(document).ready(function () {
+  
 window.onload = function() {
   var token = localStorage.getItem("token")
   
@@ -19,9 +20,7 @@ window.onload = function() {
   }
 }
 
-
-function login() {
-
+$("#login-button").click(function() {
   var username = $("#username").val()
   var password = $("#password").val()
   
@@ -32,18 +31,18 @@ function login() {
           localStorage.setItem("token", user.token)
           window.location.reload()
       }
-      else{
-        alert("user not valid!")
-      }
+      // else{
+      //   alert("user not valid!")
+      // }
   })
   })
-  
-  }
+})
 
-function logout() {
+$("#logout").click(function() {
   localStorage.setItem("token", "")
   window.location.reload();
-}
+})
+
 
 
 
@@ -102,3 +101,4 @@ function logout() {
   $(".heart").on('animationend', function(){
     $(this).toggleClass('is_animating');
   });
+})
